@@ -28,12 +28,14 @@ detect_memory() {
   esac
 }
 
-echo "**** DEBUG ****"
-ls $HOME/.heroku/bin
-echo "**** DEBUG ****"
+echo "**** DEBUG ls ****"
+ls
+echo "**** DEBUG pwd ****"
+pwd
 
-export PATH=$HOME/.heroku/node/bin:$HOME/.heroku/bin:$PATH
-export NODE_HOME="$HOME/.heroku/node"
+
+export PATH=$HOME/.heroku/bin:$PATH
+
 eval "$(fnm env)"
 
 calculate_concurrency
