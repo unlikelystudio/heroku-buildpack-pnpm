@@ -29,7 +29,7 @@ detect_memory() {
 }
 
 echo "**** DEBUG ****"
-ls $HOME/.heroku/node/bin
+ls $HOME/.heroku/bin
 echo "**** DEBUG ****"
 
 export PATH=$HOME/.heroku/node/bin:$HOME/.heroku/bin:$PATH
