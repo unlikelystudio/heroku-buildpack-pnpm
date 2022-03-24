@@ -28,16 +28,10 @@ detect_memory() {
   esac
 }
 
-echo "**** DEBUG ls ****"
-ls
-echo "**** DEBUG pwd ****"
-pwd
-
-
 export PATH=$HOME/.heroku/bin:$PATH
 
 eval "$(fnm install)"
-eval "$(fnm env --use-on-cd)"
+eval "$(fnm env)"
 
 calculate_concurrency
 
