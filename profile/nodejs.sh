@@ -28,6 +28,10 @@ detect_memory() {
   esac
 }
 
+echo "**** DEBUG ****"
+ls $HOME/.heroku/node/bin
+echo "**** DEBUG ****"
+
 export PATH=$HOME/.heroku/node/bin:$HOME/.heroku/bin:$PATH
 export NODE_HOME="$HOME/.heroku/node"
 eval "$(fnm env)"

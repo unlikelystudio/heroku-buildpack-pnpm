@@ -75,3 +75,5 @@ run_prebuild "$BUILD_DIR"
 
 echo "-----> Run build"
 run_build "$BUILD_DIR"
+
+export PATH=$HOME/.heroku/node/bin:$PATH
