@@ -36,6 +36,7 @@ pwd
 
 export PATH=$HOME/.heroku/bin:$PATH
 
+eval "$(fnm install --use-on-cd)"
 eval "$(fnm env --use-on-cd)"
 
 calculate_concurrency
