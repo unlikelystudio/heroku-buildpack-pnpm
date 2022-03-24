@@ -28,7 +28,8 @@ detect_memory() {
   esac
 }
 
-export PATH=$HOME/.heroku/bin:$PATH
+export PATH=$HOME/.heroku/node/bin:$HOME/.heroku/bin:$PATH
+export NODE_HOME="$HOME/.heroku/node"
 eval "$(fnm env)"
 
 calculate_concurrency
